@@ -89,6 +89,6 @@ io.on('connection', (socket) => {
 
 });//END OF IO CONNECTION EVENT
 
-http.listen(5000, () => {
-  console.log('listening on port 5000');
+http.listen(process.env.PORT || 5000, () => {
+  console.log('SERVER STARTED');
 });
