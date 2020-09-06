@@ -1,2 +1,7 @@
 # LiveClip
- A real-time collaborative textpad.
+ A real-time collaborative text editor, which is essentially a textpad that syncs across multiple connected devices.
+ Users can join a room by scanning the QR code on the page, or by going to the pages URL.
+ Also, different versions of the text can be saved and restored at a later time, these versions are also synced across all the connected users.
+ The frontend is built without any frameworks, while the backend uses Socket.IO library on top of NodeJS.
+ ## See it in action
+  https://liveclip.herokuapp.com
