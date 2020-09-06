@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveClip</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Lato:100,200,300|Open+Sans:300,400,500,600,700|Raleway:500,300|Roboto|Ubuntu&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="fullcontainer">
+        <div id="headercon">
+            <i class="lni lni-paperclip"></i>
+             <span id="ownername">User</span>'s LiveClip
+        </div>
+        <!-- header end -->
+        <div id="notepadcon">
+            <div id="controlwrapper">
+                <div class="controlbutton" id='fontdecr' onclick="fontdecr()"><span>A</span></div>
+                <div class="controlbutton" id='fontincr' onclick="fontincr()">A</div>
+                <div class="controlbutton" id='copybtn' onclick="copytext()"><img src="media/copy.png" alt=""></div>
+                <div class="controlbutton longbuttons" id='restoreversion'><img src="media/restore.png" alt=""> Restore<span class="pconly"> a saved version</span>
+                    <div class="" id="popupwrapper"></div>
+                </div>
+                <div class="controlbutton longbuttons" id='saveversion' onclick="saveversion()"><img src="media/saveribbon.png" alt=""> Save <span class="pconly">this version</span></div>
+            </div>
+            <div id="statusbox"><img src="media/rightarrow.png" alt=""><span id="status">Start editing.</span></div>
+            <textarea name="" id="notepad" cols="" rows=""></textarea>
+        </div>
+        <!-- notepadend -->
+        <div id="sidebartop" class="sidebarcards">
+            <img src="" id='qrimage'>
+            <div id='shareinfo'>Scan the QR code or open the link below to connect to this LiveClip.</div>
+            <div id="sharelink">liveclip.herokuapp.com?id=8637430</div>
+            <div id="linkcopy" class='sdbtn' onclick="copylink()"><img src="media/copy.png" alt=""></div>
+            <div id="linkshare" class='sdbtn' onclick="opensharedialogue()"><img src="media/share.png" alt=""></div>
+        </div>
+        <!-- sidetopend -->
+        <div id="sidebarbottom"  class="sidebarcards">
+            <div class="sidebarhead"> <img src="media/people.png" alt=""> Connected Users (<span id="userno">1</span>):</div>
+            <div id="listwrapper">
+            <ul type='circle' id='userlist'>
+            </ul>
+        </div>
+        </div>
+        <!-- sidebottom end -->
+    </div>
+    <!-- fullcontainer end -->
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="js/sockets.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/status.js"></script>
+</body>
+
+</html>
