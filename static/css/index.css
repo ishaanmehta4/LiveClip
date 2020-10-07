@@ -3,15 +3,15 @@
 /* dark:     background: #22242a; */
 
 
-/**::-webkit-scrollbar {
+*::-webkit-scrollbar {
 display: none;
-}  */
+}  
 
 /* Hide scrollbar for IE and Edge */
-/** {
+* {
     user-select: none;
 -ms-overflow-style: none;
-}*/
+}
 
 * {
 padding: 0px;
