@@ -18,6 +18,7 @@ padding: 0px;
 margin: 0px;
 border: 0px;
 box-sizing: border-box;
+/* font-size: 1.15rem; */
 }
  
 body
@@ -25,8 +26,16 @@ body
     background-color: #ebefff;
     font-family: 'open sans';
     color: #22242a;
+    font-size: 1.3em;
 }
 
+@media only screen and (max-width: 900px)
+{
+    body
+    {
+        font-size: 1em;
+    }
+}
 #fullcontainer
 {
     height: 100%;
@@ -40,7 +49,7 @@ body
 {
     grid-row: 1/ span 1;
     grid-column: 1/ span 2;
-    font-size: 1.65em;
+    font-size: 1.7em;
     line-height: 1.65em;
     position: relative;
     top: 5px;
@@ -103,6 +112,7 @@ body
 
 #controlwrapper
 {
+    margin-top: 10px;
     grid-row: 1/span 1;
     grid-column: 2/span 1;
 }
@@ -118,17 +128,19 @@ body
     position: relative;
     height: 74%;
     padding-left: 15px;
-    padding-top: 5px;
+    padding-top: 1px;
     margin-left: 10px;
     margin-right: 10px;
     top: 18%;
+    font-size: 1.2em;
     z-index: 0;
 }
 
 #status
 {
-    margin-left: 6px;
+    margin-left: 15px;
     transition: all 0.3s;
+    font-size: 0.8em;
 }
 
 #statusbox img
@@ -139,7 +151,16 @@ body
     position: relative;
     top: 1px;
 }
-
+@media only screen and (max-width: 900px)
+{
+    #status
+    {
+        font-size: 1em;
+        margin-left: 5px;
+        position: relative;
+        top: -3px;
+    }
+}
 #notepad
 {
     /* font-family: 'Ubuntu'; */
@@ -350,11 +371,13 @@ box-shadow:  2px 8px 14px #131417,
     width: 80%;
     padding-right: 5px;
     padding-left: 5px;
+    font-size: 0.9em;
     padding-top: 3px;
     padding-bottom: 3px;
     position: relative;
     left: 10%;
     margin-top: 10px;
+    margin-top: 30px;
     z-index: 2;
     user-select: text;
 }
@@ -368,13 +391,27 @@ box-shadow:  2px 8px 14px #131417,
     border-radius: 50%;
     padding: 7px;
     margin-top: 10px;
+    margin-top: 30px;
+    transform: scale(1.1);
     display: inline-block;
     border-radius: 50px;
     box-shadow:  5px 5px 14px #a2a4af, 
              -5px -5px 14px #ffffff;
     transition: all 0.3s;
 }
-
+@media only screen and (max-width: 900px)
+{
+    .sdbtn
+    {
+        transform: scale(1);
+        margin-top: 10px;
+    }
+    #sharelink
+    {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+}
 .sdbtn img
 {
     position: relative;
@@ -411,7 +448,7 @@ box-shadow:  2px 8px 14px #131417,
     /* text-align: center; */
     position: relative;
     left: 15px;
-    font-size: 1.1em;
+    font-size: 1em;
     padding-top: 20px;
     font-weight: 600;
 }
