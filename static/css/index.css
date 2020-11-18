@@ -123,8 +123,8 @@ body
     grid-column: 2/span 1;
     transition: all 0.3s;
     border-radius: 20px;
-    background-color: #131518;
-    color: #a2a4af;
+    background-color: #343d49;
+    color: #86888f;
     position: relative;
     height: 74%;
     padding-left: 15px;
@@ -170,11 +170,11 @@ body
     padding: 20px;
     font-size: 1.35em;
     line-height: 1.35em;
-    color: white;
+    color: rgb(109, 15, 117);
     margin: 10px;
     border-radius: 20px;
-    background: #22242a;
-    box-shadow: inset 8px 8px 16px #131518, 
+    background: #52884d;
+    box-shadow: inset 8px 8px 16px #2f343a, 
                 inset -8px -8px 16px #31333c;
 }
 
